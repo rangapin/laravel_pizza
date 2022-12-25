@@ -8,7 +8,11 @@ export default defineConfig({
                 'resources/sass/app.scss',
                 'resources/js/app.js',
             ],
+            output: 'standalone',
             refresh: true,
+            experimental: {
+                nftTracing: true
+              }
         }),
     ],
 });
